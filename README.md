@@ -1,0 +1,28 @@
+# Auction
+- #### Desctiption
+    - To allow users to attend biddings for valuable items such as jelwelries, gems, antinque
+- #### Motivation
+    - No clear sites in VN actually doing it right.
+- #### Key features
+    - Only confirmed, validated, registered can attend biddings
+    - User can bid at items, pay fee to attend the bid (once). In order to beat other people's biddings, user must raise his amount.
+    - Biddings have closing time. Highest bid wins
+- #### Techinical implementation plan
+    - ##### Server Demo:
+        - The demo is using NodeJs, Express and MongoDb.
+        - Cloudinary is used for uploading image
+        - MailGun is to send email of verification, notifications
+        - Heroku server is the host to deploy
+        - Email, Google, Facebook are used for registration
+        - Node-cron for doing Scheduled Jobs
+        - jsonwebtoken & bcrypt to handle authentication and encryption
+        - Sidekiq for caching
+        - Firebase for notifications
+        - Elastic Search for boosting search
+    - ##### Web Demo
+        -  NextJs with ReactJs as View to apply SSR for SEO
+        -  Redux is used to handle actions
+        -  materials-ui for styling
+        -  axios for handling request
+        -  lodash for reactive handling.
+        -  Firebase for notifications
