@@ -18,7 +18,6 @@
         - jsonwebtoken & bcrypt to handle authentication and encryption
         - Sidekiq for caching
         - Firebase for notifications
-        - Elastic Search for boosting search
     - ##### Web Demo
         -  NextJs with ReactJs as View to apply SSR for SEO
         -  Redux is used to handle actions
